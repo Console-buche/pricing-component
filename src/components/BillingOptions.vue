@@ -4,9 +4,11 @@
       <label class="option">Monthly Billing</label>
       <ToggleBilling @change-billing="updateDiscount" />
       <label class="option">Yearly Billing</label>
-      <label v-show="discountOn" class="option option--discount" for="monthly"
-        >25% discount</label
-      >
+      <label
+        v-show="discountOn"
+        class="option option--discount"
+        for="monthly"
+      ></label>
     </div>
   </form>
 </template>
@@ -61,4 +63,15 @@ div
     right: 10%
     margin: 0
     color: $lightred
+
+    &::after
+      content: '25% discount'
+
+$breakpoint-tablet: 800px
+@media (max-width: $breakpoint-tablet)
+
+  .option--discount
+    right: 5%
+    &:after
+      content: '-25%'
 </style>

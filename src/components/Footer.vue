@@ -30,36 +30,54 @@ footer
   align-items: center
   height: 100px
 
+ul
+  list-style-type: none
+  margin: 0
+  padding-left: 15px
+  color: $desatblue
+  font-size: 15px
+
+  li
+    margin-bottom: 10px
+
+    &:before
+      content: ''
+      width: 20px
+      height: 10px
+      background-image: url('../assets/images/icon-check.svg')
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+      padding-right: 10px
+      margin-right: 15px
+
+div
+  width: 100%
+
+  &:first-child
+    text-align: left
+
+  &:nth-child(2) span
+    padding: 12px 50px
+    background: $cta
+    color: white
+    border-radius: 25px
+
+  &:hover
+    cursor: pointer
+
+$breakpoint-tablet: 800px
+@media (max-width: $breakpoint-tablet)
+  footer
+    flex-direction: column
+
   ul
-    list-style-type: none
-    margin: 0
-    padding-left: 15px
-    color: $desatblue
-    font-size: 15px
+    padding-left: 0
 
-    li
-      margin-bottom: 10px
+  div
+    &:first-child
+      text-align: center
 
-      li:before
-        content: ''
-        width: 20px
-        height: 10px
-        background-image: url('../assets/images/icon-check.svg')
-        background-size: contain
-        background-repeat: no-repeat
-        background-position: center
-        padding-right: 10px
-        margin-right: 15px
-
-    div
-      width: 100%
-
-      &:first-child
-        text-align: left
-
-        &:nth-child(2) span
-          padding: 12px 50px
-          background: $cta
-          color: white
-          border-radius: 25px
+    &:nth-child(2)
+      margin-top: 40px
 </style>

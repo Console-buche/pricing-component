@@ -28,9 +28,6 @@ export default {
     };
   },
   methods: {
-    proutosse(v) {
-      console.log(v);
-    },
     updatePrice() {
       let new_price = this.updatedPrice + this.thumbPos;
       new_price = this.discountOn ? new_price * 0.75 : new_price;
@@ -77,4 +74,13 @@ ul
   .sub
     color: $subtext_color
     font-size: 0.85em
+
+$breakpoint-tablet: 800px
+@media (max-width: $breakpoint-tablet)
+  ul
+    flex-direction: column-reverse
+    align-items: center
+
+  li:first-child
+    padding-top: 20px
 </style>

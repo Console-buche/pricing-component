@@ -23,4 +23,8 @@ export default {
   display: flex
   flex-direction: column
   align-items: center
+  padding: 50px
+  box-shadow: 0 10px 30px -10px #000000ad
+  max-width: 1440px
+  width: 75vmax
 </style>

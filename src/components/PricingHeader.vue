@@ -39,4 +39,17 @@ h5
   color: $subtext_color
   margin-top: 5px
   letter-spacing: .5px
+
+$breakpoint-tablet: 800px
+@media (max-width: $breakpoint-tablet)
+  header
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  h1
+    font-size: 24px
+
+  h5
+    max-width: 200px
 </style>

@@ -46,9 +46,13 @@ export default {
 <style lang="sass" scoped>
 section
   padding: 20px
-  box-shadow: 3px 3px 3px 0px black
   min-width: 350px
   width: 100%
   max-width: 700px
-  box-shadow: 0px 10px 25px -20px black
+  box-shadow: 0px 10px 28px -20px #000
+
+$breakpoint-tablet: 800px
+@media (max-width: $breakpoint-tablet)
+  section
+    max-width: 400px
 </style>

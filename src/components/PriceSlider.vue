@@ -85,4 +85,7 @@ input
     border: none
     border-radius: 30px
     background: $strongcyan; /* pris en compte sur Webkit only */
+
+  &::hover
+    cursor: pointer
 </style>
