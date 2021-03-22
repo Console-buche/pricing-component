@@ -3,7 +3,7 @@
   <p align="center">
     Inspiré d'un challenge FrontEndMentor, composant de pricing en Vue.js qui permet d'ajuster un coût, de sélectionner une option de durée de souscription, d'appliquer un discount... 
 
-  <img src="https://github.com/Console-buche/vue-job_listings/blob/main/joblistings.gif?raw=true" alt="Le gif daft punk" />
+  <img src="https://github.com/Console-buche/pricing-component/blob/main/demo_pricing.gif?raw=true" alt="Le gif composant pricing" />
 </p>
 
   </p>
