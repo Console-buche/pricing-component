@@ -10,11 +10,6 @@
 
 </p>
 
-
-## TODO
-
-Projet en cours, voir les commits (reste un peu de css states / mobile view à faire)
-
 <!-- A propos  -->
 
 ## A propos
